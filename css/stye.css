@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+::selection{
+    background-color: #7836b28f;
+    color: #fff;
+}
+a{
+    text-decoration: none !important;
+}
+
+ul{
+    list-style: none;
+}
+
+/* importing fonts */
+@font-face {
+    font-family: ar-font;
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+/* main colors */
+
+:root{
+    --light-black: #555555;
+    --purple: #7936b2;
+}
+
+body {
+    font-family: ar-font, sans-serif;
+}
+
+/* header section styeling*/
+
+header video{
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+header .overlay{
+    background-color: rgb(255, 255, 255, .7);
+}
+
+header .brand {
+    padding-top: 40px;
+}
+header .header-text {
+    padding-top: 190px;
+}
+header .row .header-text h1{
+    font-size: 36px;
+    margin-bottom: 40px;
+    line-height: 46px;
+    color: var(--light-black);
+}
+
+header .row .header-text p{
+    font-size: 18px;
+    line-height: 36px;
+    color: #5b5b5b;
+    margin-bottom: 50px;
+}
+
+header .header-btn a {
+    padding: 22px 55px;
+    background-color: var(--purple);
+    color: white;
+    margin-left: 15px;
+}
+header .header-btn a.btn:first-child:hover{
+    background-color: #9041d5;
+    color: #fff;
+}
+header .header-btn a.btn:last-child{
+    background-color: transparent;
+    color: var(--purple);
+}
+
+header .product{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+header .product .product-label img{
+    position: absolute;
+    top: -53px;
+    right: -80px;
+}
+
+header .product .product-label p{
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    top: -25px;
+    right: -23px;
+    text-align: center;
+}
+
+/* main section styeling*/
+
+    /* features  section styeling*/
+
+section.features {
+    padding: 70px 0px;
+    background-color: white;
+}
+
+.features .features-title h2{
+    font-size: 36px;
+    line-height: 32px;
+    padding-bottom: 45px;
+    position: relative;
+}
+
+.features .features-title h2::after{
+    content: '';
+    width: 150px;
+    height: 2px;
+    background-color: var(--purple);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .media-features .d-flex{
+    padding: 70px 0px;
+    border-bottom: 3px solid #eeeeee;
+}
+
+.features .media-features .d-flex:nth-child(2){
+    direction: ltr;
+}
+
+.features .media-features .d-flex img{
+    margin: 0 80px;
+}
+
+.features .media-features .d-flex h4{
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--purple);
+    margin-bottom: 50px;
+    border-right: 2px solid var(--purple);
+    padding: 0 25px;
+}
+
+.features .media-features .d-flex:nth-child(2) h4{
+    border-right: 0px;
+    border-left: 2px solid var(--purple);
+}
+
+.features .media-features .d-flex p{
+    font-size: 18px;
+    color: var(--light-black);
+    line-height: 32px;
+}
+
+/* prices  section styeling*/
+
+.prices{
+    padding: 50px 0 60px;
+    background-color: #f7f7f7;
+}
+
+.prices .prices-title h2 {
+    font-size: 30px;
+    color: var(--light-black);
+}
+
+.prices .plan-card{
+    background-color: white;
+    border: 2px solid #ededed;
+    padding: 15px 0;
+    margin-top: 100px;
+    color: #a9a9ab;
+}
+
+.prices .plan-card .title{
+    color: var(--purple);
+    font-size: 18px;
+}
+
+.prices .plan-card h5{
+    font-size: 48px;
+    margin: 30px auto;
+}
+
+.prices .plan-card h5 span{
+    font-size: 15px;
+    vertical-align: bottom;
+}
+
+.prices .plan-card ul li{
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.prices .plan-card a.btn{
+    padding: 10px 40px;
+    transition: .4s all ease-in-out;
+    border-radius: 1px;
+}
+
+.prices .col-md-6:nth-child(3) .plan-card{
+    padding-top: 60px;
+    margin-top: 55px;
+}
+
+/* FAQ  section styeling*/
+
+.faq{
+    background-color: #fff;
+    padding: 55px 0;
+}
+
+.faq-title h2{
+    margin-bottom: 60px;
+    font-size: 30px;
+    color: #555555;
+}
+
+.faq-accordion .accordion .accordion-item{
+    border: 1px solid #ebebeb;
+    margin: 15px 0;
+} 
+
+.faq-accordion .accordion .accordion-item .accordion-body{
+    font-size: 15px;
+    color: #a1a1a1;
+    line-height: 24px;
+}
+
+.faq-accordion .accordion .accordion-button{
+    font-size: 18px;
+    color: #555555;
+    font-weight: bold;
+}
+
+/* video  section styeling*/
+
+section.video{
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+section.video video{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+}
+
+section.video .overlayer{
+    background-color:rgb(130, 77, 178, .9);
+    min-height: 100%;
+    position: absolute;
+    inset: 0;
+}
+
+.video .overlayer button{
+    border: none;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    background-color: transparent;
+    color: #fff;
+    font-size: 30px;
+    transform: translate(50%, 50%);
+}
+.video .overlayer button:hover{
+    color: rgb(228, 198, 255);
+}
+.video .overlayer button i{
+    display: block;
+    width: 90px;
+    height: 90px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    line-height: 90px;
+    margin: 0 auto 45px;
+}
+
+/* Contact  section styeling*/
+
+.contact{
+    padding: 60px 0 40px;
+    background-color: #131313;
+}
+.contact h4{
+    font-size: 18px;
+    color: #758594;
+    line-height: 50px;
+}
+
+.contact input,.contact textarea{
+    display: block;
+    border: none;
+    background-color: #242424;
+    margin-bottom: 10px;
+    direction: rtl;
+    color: #aeadad;
+    text-align: right;
+    font-size: 18px;
+    line-height: 35px;
+    padding: 10px;
+    width: 90%;
+}
+
+.contact form .invalid-feedback{
+    margin-bottom: 0.26rem !important;
+}
+
+.contact .blog .d-flex{
+    margin-bottom: 25px;
+}
+
+.contact .blog h5{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #aeadad;
+}
+
+.contact .blog p{
+    font-size: 15px;
+    color: #737373;
+    line-height: 20px;
+}
+
+/* footer  section styeling*/
+
+footer{
+    background-color: #1d1d1d;
+    padding: 25px 0;
+}
+
+footer .list-inline .list-inline-item a {
+    width: 40px;
+    height: 40px;
+    color: #1d1d1d;
+    line-height: 40px;
+    background-color: #758594;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    transition: .2s all ease-in-out;
+}
+
+footer .list-inline .list-inline-item a:hover{
+    background-color: #9e42ef;
+}
+
+footer .copy-right p{
+    color: #919191;
+    font-size: 15px;
+    text-align: left;
+}
+
+/*Making it responsive*/
+
+@media (max-width: 992px){
+    header .header-text{
+        padding-top: 80px;
+    }
+    .features .media-features .d-flex h4 {
+        padding:0 10px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px){
+    header .overlay .product{
+        margin-top: 100px;
+    }
+    header .overlay .product .product-label img{
+        right: 50%;
+        transform: translateX(50%);
+    }
+    header .overlay .product .product-label p{
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .features .media-features .d-flex {
+        flex-flow: column;
+        text-align: center;
+    }
+    .features .media-features .d-flex img{
+        margin: 0 auto 50px;
+    }
+    
+    .contact h4{
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 576px){
+    footer{
+        text-align: center;
+    }
+
+    footer .copy-right p{
+        text-align: center;
+    }
+}
